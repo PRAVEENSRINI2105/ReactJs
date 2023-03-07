@@ -1,57 +1,280 @@
 import React from 'react';
-import ReactDom  from 'react-dom';
-
-//CSS
-
-import './index.css'
+//import App from 
 
 
-const book = [
-    {
- author: 'Colleen Hoover' ,
- title: 'Ugly love: A novel' ,
- img: 'https://images-na.ssl-images-amazon.com/images/I/71E8VNPC1dL._AC_UL300_SR300,200_.jpg' 
-},
-{
-    author: 'James Clear',
-    title: 'Atomic Habits',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/81bGKUa1e0L._AC_UL600_SR600,400_.jpg' 
-},
-{
-    author:'Robert Greene',
-    title: ' The 48 Laws of Power',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/71aG+xDKSYL._AC_UL600_SR600,400_.jpg'
-},
-];
-   
-const names = ['praveen','ravi','pradeep'];
-function BookList() {
-    return (
-        <section className='booklist'>
-            <Book
-           author = {firstbook.author}
-           title = {firstbook.title}
-           img = {firstbook.img}
-           />
-            <Book 
-             author = {secondbook.author}
-             title = {secondbook.title}
-             img = {secondbook.img} />
-        </section>
-    )
+const App = () => {
+  return (
+   <h1>App</h1>
+  );
 }
 
-const Book = (props) => {
-    const {img,title,author} = props
-    return (
-        <article className='book'>
-        <img src={img} alt='' />
-     <p>{title}</p>
-        <p>{author}</p>
-        </article>
-    );
-};
-
-ReactDom.render(<BookList/>,document.getElementById('root'));
+export default App;
 
 
+
+
+
+
+//Events, state and useEffect
+
+
+// import {useState, useEffect} from 'react';
+// import './App.css';
+
+
+
+
+// const App = () => {
+//   const[counter, setcounter] = useState(0);
+  
+//   useEffect(() => {
+//    alert("you changed the counter to " + counter);
+//   },[counter]);
+  
+  
+  
+//   return (
+//     <div className="App">
+//     <button onClick={() => setcounter((prevCount) => prevCount - 1)}>-</button>
+//      <h1>{counter}</h1>
+//      <button onClick={() => setcounter((prevCount) => prevCount + 1)}>+</button>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+//props
+
+// import './App.css';
+
+// const Person = (props) => {
+//   return (
+//     <>
+//     <h1>Name: {props.name}</h1>
+//     <h2>Last Name: {props.LastName}</h2>
+//     <h2>Age: {props.age}</h2>
+//     </>
+//   )
+// }
+
+
+
+// const App = () => {
+//   const name = 'praveen';
+//   const isNameShowing = true;
+
+//   return (
+//     <div className='App'>
+//       <Person name={'Revi'} LastName={'Raj'} age={'21'}/>
+//       <Person name={'pradeep'} LastName={'thiru'} age={'21'}/>
+//       <Person />
+//       <h1>Hello{isNameShowing ? name: 'someone'},{name}</h1>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//custom components
+
+// import {useState} from 'react'
+
+// const Hi = (props) => {
+//   const {num} = props;
+//   return (
+//     <div>Hi there {num}.</div>
+//   )
+// }
+// function App() {
+
+//   const [number, setNumber] = useState(0);
+  
+//   const add = () => {
+//     setNumber(number+1)
+//   }
+  
+//   return (
+//     <div className="App">
+//       <Hi num = {number} />
+//       <div>Number={number}</div>
+//       <button onClick = {add}>Add</button>
+//     </div>
+//   );
+// }
+
+// export default App;
